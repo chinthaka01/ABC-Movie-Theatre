@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewMovieViewController">
+            <connections>
+                <outlet property="tableView" destination="c3T-71-8l6" id="jpW-u4-ysr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="c3T-71-8l6">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fUt-Uz-i8g"/>
+                        <outlet property="delegate" destination="-1" id="aBI-En-DKd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="c3T-71-8l6" secondAttribute="centerY" id="Doz-ZB-eNj"/>
+                <constraint firstAttribute="trailing" secondItem="c3T-71-8l6" secondAttribute="trailing" id="Dt9-uA-NWB"/>
+                <constraint firstAttribute="centerX" secondItem="c3T-71-8l6" secondAttribute="centerX" id="ScL-wv-E1V"/>
+                <constraint firstItem="c3T-71-8l6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TH3-wS-zeG"/>
+                <constraint firstItem="c3T-71-8l6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="V2l-yF-NTP"/>
+                <constraint firstAttribute="bottom" secondItem="c3T-71-8l6" secondAttribute="bottom" id="ZVo-0A-R6t"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewCastMembersListViewController">
+            <connections>
+                <outlet property="tableView" destination="beh-DJ-ZPu" id="2Ma-Tz-tJJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="SL7-3c-1Rv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="beh-DJ-ZPu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NAU-TN-4cO"/>
+                        <outlet property="delegate" destination="-1" id="Ggb-rH-Nof"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="beh-DJ-ZPu" secondAttribute="centerX" id="DTz-FN-C9g"/>
+                <constraint firstAttribute="trailing" secondItem="beh-DJ-ZPu" secondAttribute="trailing" id="JaZ-cc-qLU"/>
+                <constraint firstItem="beh-DJ-ZPu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RsW-iX-4eU"/>
+                <constraint firstAttribute="centerY" secondItem="beh-DJ-ZPu" secondAttribute="centerY" id="arC-Fl-GS9"/>
+                <constraint firstAttribute="bottom" secondItem="beh-DJ-ZPu" secondAttribute="bottom" id="kra-RZ-yRd"/>
+                <constraint firstItem="beh-DJ-ZPu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z8R-DA-Rsk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

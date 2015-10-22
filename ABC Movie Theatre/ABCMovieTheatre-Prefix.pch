@@ -1,0 +1,15 @@
+//
+//  ABCMovieTheatre-Prefix.pch
+//  ABC Movie Theatre
+//
+//  Created by Chinthaka Perera on 10/20/15.
+//  Copyright (c) 2015 ABC. All rights reserved.
+//
+
+#ifndef ABC_Movie_Theatre_ABCMovieTheatre_Prefix_pch
+#define ABC_Movie_Theatre_ABCMovieTheatre_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif

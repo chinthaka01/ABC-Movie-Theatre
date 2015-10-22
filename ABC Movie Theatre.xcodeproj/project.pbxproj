@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B532ED91BD564CB0001FBF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B532ED81BD564CB0001FBF1 /* main.m */; };
+		2B532EDC1BD564CB0001FBF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B532EDB1BD564CB0001FBF1 /* AppDelegate.m */; };
+		2B532EDF1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B532EDD1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodeld */; };
+		2B532EE51BD564CB0001FBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B532EE31BD564CB0001FBF1 /* Main.storyboard */; };
+		2B532EE71BD564CC0001FBF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B532EE61BD564CC0001FBF1 /* Images.xcassets */; };
+		2B532EEA1BD564CC0001FBF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B532EE81BD564CC0001FBF1 /* LaunchScreen.xib */; };
+		2B532EF61BD564CC0001FBF1 /* ABC_Movie_TheatreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B532EF51BD564CC0001FBF1 /* ABC_Movie_TheatreTests.m */; };
+		2B532F0C1BD569BC0001FBF1 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B532F0B1BD569BC0001FBF1 /* MovieListViewController.m */; };
+		2BC865CA1BD60596006ABEF3 /* WebServiceDataRetrievalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865C91BD60596006ABEF3 /* WebServiceDataRetrievalManager.m */; };
+		2BC865CD1BD60625006ABEF3 /* DataRetrievalBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865CC1BD60625006ABEF3 /* DataRetrievalBase.m */; };
+		2BC865D01BD606D6006ABEF3 /* MovieRetrieval.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865CF1BD606D6006ABEF3 /* MovieRetrieval.m */; };
+		2BC865D31BD6073D006ABEF3 /* GenreRetrieval.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865D21BD6073D006ABEF3 /* GenreRetrieval.m */; };
+		2BC865D81BD630C0006ABEF3 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865D71BD630C0006ABEF3 /* CoreDataManager.m */; };
+		2BC865DE1BD63B77006ABEF3 /* DataHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865DD1BD63B77006ABEF3 /* DataHandlerBase.m */; };
+		2BC865E21BD63B97006ABEF3 /* MovieDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865E11BD63B97006ABEF3 /* MovieDataHandler.m */; };
+		2BC865E51BD63BAA006ABEF3 /* GenreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865E41BD63BAA006ABEF3 /* GenreDataHandler.m */; };
+		2BC865F41BD6483E006ABEF3 /* DataHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865F31BD6483E006ABEF3 /* DataHandlerManager.m */; };
+		2BC865FE1BD67327006ABEF3 /* CoreDataConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC865FD1BD67327006ABEF3 /* CoreDataConstants.m */; };
+		2BE407C11BD5F9C800AEABB5 /* BaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE407BF1BD5F9C800AEABB5 /* BaseListViewController.m */; };
+		2BE407C21BD5F9C800AEABB5 /* BaseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE407C01BD5F9C800AEABB5 /* BaseListViewController.xib */; };
+		2BEFDFAA1BD6A4480093125B /* MoviesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFA81BD6A4480093125B /* MoviesTableViewCell.m */; };
+		2BEFDFAE1BD742F70093125B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFB01BD742F70093125B /* Localizable.strings */; };
+		2BEFDFB21BD7454E0093125B /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFB41BD7454E0093125B /* MoviesTableViewCell.xib */; };
+		2BEFDFBC1BD756F80093125B /* score-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFBA1BD756F80093125B /* score-mark.png */; };
+		2BEFDFC21BD75DFE0093125B /* AddNewMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFC01BD75DFE0093125B /* AddNewMovieViewController.m */; };
+		2BEFDFC31BD75DFE0093125B /* AddNewMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFC11BD75DFE0093125B /* AddNewMovieViewController.xib */; };
+		2BEFDFC71BD773100093125B /* TitleWithTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFC51BD773100093125B /* TitleWithTextFieldCell.m */; };
+		2BEFDFC81BD773100093125B /* TitleWithTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFC61BD773100093125B /* TitleWithTextFieldCell.xib */; };
+		2BEFDFCC1BD773350093125B /* TitleWithLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFCA1BD773350093125B /* TitleWithLabelCell.m */; };
+		2BEFDFCD1BD773350093125B /* TitleWithLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFCB1BD773350093125B /* TitleWithLabelCell.xib */; };
+		2BEFDFD01BD777850093125B /* NewMovieProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFCF1BD777850093125B /* NewMovieProperties.plist */; };
+		2BEFDFD41BD781CD0093125B /* TitleWithSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFD21BD781CD0093125B /* TitleWithSwitchCell.m */; };
+		2BEFDFD51BD781CD0093125B /* TitleWithSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFD31BD781CD0093125B /* TitleWithSwitchCell.xib */; };
+		2BEFDFDA1BD784B90093125B /* NewMovieTableCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFD91BD784B90093125B /* NewMovieTableCellBase.m */; };
+		2BEFDFDD1BD7A8E10093125B /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFDC1BD7A8E10093125B /* PickerViewController.m */; };
+		2BEFDFDF1BD7A9020093125B /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFDE1BD7A9020093125B /* PickerViewController.xib */; };
+		2BEFDFE31BD7C9EC0093125B /* GenreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFE11BD7C9EC0093125B /* GenreListViewController.m */; };
+		2BEFDFE41BD7C9EC0093125B /* GenreListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFE21BD7C9EC0093125B /* GenreListViewController.xib */; };
+		2BEFDFF41BD7D6A30093125B /* GenreSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFF21BD7D6A30093125B /* GenreSelectCell.m */; };
+		2BEFDFF51BD7D6A30093125B /* GenreSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFF31BD7D6A30093125B /* GenreSelectCell.xib */; };
+		2BEFDFF91BD7DFAE0093125B /* CastMembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFDFF71BD7DFAE0093125B /* CastMembersViewController.m */; };
+		2BEFDFFA1BD7DFAE0093125B /* CastMembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFDFF81BD7DFAE0093125B /* CastMembersViewController.xib */; };
+		2BEFE0061BD7FD700093125B /* TextFieldViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE0041BD7FD700093125B /* TextFieldViewCell.m */; };
+		2BEFE0071BD7FD700093125B /* TextFieldViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFE0051BD7FD700093125B /* TextFieldViewCell.xib */; };
+		2BEFE00F1BD81BC60093125B /* MovieDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE00E1BD81BC60093125B /* MovieDataModel.m */; };
+		2BEFE0131BD87EA20093125B /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE0121BD87EA20093125B /* Genre.m */; };
+		2BEFE0161BD87EA30093125B /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE0151BD87EA30093125B /* Movie.m */; };
+		2BEFE0191BD89D960093125B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE0181BD89D960093125B /* Constants.m */; };
+		2BEFE01D1BD8C5E70093125B /* ViewCastMembersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE01C1BD8C5E70093125B /* ViewCastMembersListViewController.m */; };
+		2BEFE01F1BD8C5FB0093125B /* ViewCastMembersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFE01E1BD8C5FB0093125B /* ViewCastMembersListViewController.xib */; };
+		2BEFE0221BD8D65D0093125B /* CreateAlertsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFE0211BD8D65D0093125B /* CreateAlertsHelper.m */; };
+		2BEFE0241BD8E02E0093125B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEFE0231BD8E02E0093125B /* SystemConfiguration.framework */; };
+		875CF2C24B1EE40F170B5440 /* libPods-ABC Movie Theatre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B139FEEACD6A8CA5F7B8414 /* libPods-ABC Movie Theatre.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B532EF01BD564CC0001FBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B532ECB1BD564CB0001FBF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B532ED21BD564CB0001FBF1;
+			remoteInfo = "ABC Movie Theatre";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B532ED31BD564CB0001FBF1 /* ABC Movie Theatre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABC Movie Theatre.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B532ED71BD564CB0001FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B532ED81BD564CB0001FBF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B532EDA1BD564CB0001FBF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B532EDB1BD564CB0001FBF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B532EDE1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ABC_Movie_Theatre.xcdatamodel; sourceTree = "<group>"; };
+		2B532EE41BD564CB0001FBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B532EE61BD564CC0001FBF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B532EE91BD564CC0001FBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2B532EEF1BD564CC0001FBF1 /* ABC Movie TheatreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ABC Movie TheatreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B532EF41BD564CC0001FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B532EF51BD564CC0001FBF1 /* ABC_Movie_TheatreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABC_Movie_TheatreTests.m; sourceTree = "<group>"; };
+		2B532F0A1BD569BC0001FBF1 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		2B532F0B1BD569BC0001FBF1 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		2BC865C81BD60596006ABEF3 /* WebServiceDataRetrievalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceDataRetrievalManager.h; sourceTree = "<group>"; };
+		2BC865C91BD60596006ABEF3 /* WebServiceDataRetrievalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceDataRetrievalManager.m; sourceTree = "<group>"; };
+		2BC865CB1BD60625006ABEF3 /* DataRetrievalBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRetrievalBase.h; sourceTree = "<group>"; };
+		2BC865CC1BD60625006ABEF3 /* DataRetrievalBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRetrievalBase.m; sourceTree = "<group>"; };
+		2BC865CE1BD606D6006ABEF3 /* MovieRetrieval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieRetrieval.h; sourceTree = "<group>"; };
+		2BC865CF1BD606D6006ABEF3 /* MovieRetrieval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieRetrieval.m; sourceTree = "<group>"; };
+		2BC865D11BD6073D006ABEF3 /* GenreRetrieval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreRetrieval.h; sourceTree = "<group>"; };
+		2BC865D21BD6073D006ABEF3 /* GenreRetrieval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreRetrieval.m; sourceTree = "<group>"; };
+		2BC865D61BD630C0006ABEF3 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		2BC865D71BD630C0006ABEF3 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		2BC865D91BD634B2006ABEF3 /* ABCMovieTheatre-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABCMovieTheatre-Prefix.pch"; sourceTree = "<group>"; };
+		2BC865DC1BD63B77006ABEF3 /* DataHandlerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandlerBase.h; sourceTree = "<group>"; };
+		2BC865DD1BD63B77006ABEF3 /* DataHandlerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandlerBase.m; sourceTree = "<group>"; };
+		2BC865E01BD63B97006ABEF3 /* MovieDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDataHandler.h; sourceTree = "<group>"; };
+		2BC865E11BD63B97006ABEF3 /* MovieDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDataHandler.m; sourceTree = "<group>"; };
+		2BC865E31BD63BAA006ABEF3 /* GenreDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreDataHandler.h; sourceTree = "<group>"; };
+		2BC865E41BD63BAA006ABEF3 /* GenreDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreDataHandler.m; sourceTree = "<group>"; };
+		2BC865F21BD6483E006ABEF3 /* DataHandlerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandlerManager.h; sourceTree = "<group>"; };
+		2BC865F31BD6483E006ABEF3 /* DataHandlerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandlerManager.m; sourceTree = "<group>"; };
+		2BC865FC1BD67327006ABEF3 /* CoreDataConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataConstants.h; sourceTree = "<group>"; };
+		2BC865FD1BD67327006ABEF3 /* CoreDataConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataConstants.m; sourceTree = "<group>"; };
+		2BE407BE1BD5F9C800AEABB5 /* BaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseListViewController.h; sourceTree = "<group>"; };
+		2BE407BF1BD5F9C800AEABB5 /* BaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseListViewController.m; sourceTree = "<group>"; };
+		2BE407C01BD5F9C800AEABB5 /* BaseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseListViewController.xib; sourceTree = "<group>"; };
+		2BEFDFA71BD6A4480093125B /* MoviesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesTableViewCell.h; sourceTree = "<group>"; };
+		2BEFDFA81BD6A4480093125B /* MoviesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesTableViewCell.m; sourceTree = "<group>"; };
+		2BEFDFAF1BD742F70093125B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BEFDFB11BD742FC0093125B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BEFDFB31BD7454E0093125B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MoviesTableViewCell.xib; sourceTree = "<group>"; };
+		2BEFDFBA1BD756F80093125B /* score-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-mark.png"; sourceTree = "<group>"; };
+		2BEFDFBF1BD75DFE0093125B /* AddNewMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewMovieViewController.h; sourceTree = "<group>"; };
+		2BEFDFC01BD75DFE0093125B /* AddNewMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewMovieViewController.m; sourceTree = "<group>"; };
+		2BEFDFC11BD75DFE0093125B /* AddNewMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewMovieViewController.xib; sourceTree = "<group>"; };
+		2BEFDFC41BD773100093125B /* TitleWithTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleWithTextFieldCell.h; sourceTree = "<group>"; };
+		2BEFDFC51BD773100093125B /* TitleWithTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleWithTextFieldCell.m; sourceTree = "<group>"; };
+		2BEFDFC61BD773100093125B /* TitleWithTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleWithTextFieldCell.xib; sourceTree = "<group>"; };
+		2BEFDFC91BD773340093125B /* TitleWithLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleWithLabelCell.h; sourceTree = "<group>"; };
+		2BEFDFCA1BD773350093125B /* TitleWithLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleWithLabelCell.m; sourceTree = "<group>"; };
+		2BEFDFCB1BD773350093125B /* TitleWithLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleWithLabelCell.xib; sourceTree = "<group>"; };
+		2BEFDFCF1BD777850093125B /* NewMovieProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NewMovieProperties.plist; sourceTree = "<group>"; };
+		2BEFDFD11BD781CD0093125B /* TitleWithSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleWithSwitchCell.h; sourceTree = "<group>"; };
+		2BEFDFD21BD781CD0093125B /* TitleWithSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleWithSwitchCell.m; sourceTree = "<group>"; };
+		2BEFDFD31BD781CD0093125B /* TitleWithSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleWithSwitchCell.xib; sourceTree = "<group>"; };
+		2BEFDFD81BD784B90093125B /* NewMovieTableCellBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMovieTableCellBase.h; sourceTree = "<group>"; };
+		2BEFDFD91BD784B90093125B /* NewMovieTableCellBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMovieTableCellBase.m; sourceTree = "<group>"; };
+		2BEFDFDB1BD7A8E10093125B /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		2BEFDFDC1BD7A8E10093125B /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		2BEFDFDE1BD7A9020093125B /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		2BEFDFE01BD7C9EC0093125B /* GenreListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreListViewController.h; sourceTree = "<group>"; };
+		2BEFDFE11BD7C9EC0093125B /* GenreListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreListViewController.m; sourceTree = "<group>"; };
+		2BEFDFE21BD7C9EC0093125B /* GenreListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreListViewController.xib; sourceTree = "<group>"; };
+		2BEFDFE51BD7CB730093125B /* ViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerProtocol.h; sourceTree = "<group>"; };
+		2BEFDFE61BD7CD280093125B /* ListViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewControllerProtocol.h; sourceTree = "<group>"; };
+		2BEFDFF11BD7D6A30093125B /* GenreSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreSelectCell.h; sourceTree = "<group>"; };
+		2BEFDFF21BD7D6A30093125B /* GenreSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreSelectCell.m; sourceTree = "<group>"; };
+		2BEFDFF31BD7D6A30093125B /* GenreSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreSelectCell.xib; sourceTree = "<group>"; };
+		2BEFDFF61BD7DFAE0093125B /* CastMembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastMembersViewController.h; sourceTree = "<group>"; };
+		2BEFDFF71BD7DFAE0093125B /* CastMembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastMembersViewController.m; sourceTree = "<group>"; };
+		2BEFDFF81BD7DFAE0093125B /* CastMembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CastMembersViewController.xib; sourceTree = "<group>"; };
+		2BEFE0031BD7FD700093125B /* TextFieldViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewCell.h; sourceTree = "<group>"; };
+		2BEFE0041BD7FD700093125B /* TextFieldViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewCell.m; sourceTree = "<group>"; };
+		2BEFE0051BD7FD700093125B /* TextFieldViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldViewCell.xib; sourceTree = "<group>"; };
+		2BEFE0081BD8110E0093125B /* AddNewMovieViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewMovieViewControllerProtocol.h; sourceTree = "<group>"; };
+		2BEFE00D1BD81BC60093125B /* MovieDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDataModel.h; sourceTree = "<group>"; };
+		2BEFE00E1BD81BC60093125B /* MovieDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDataModel.m; sourceTree = "<group>"; };
+		2BEFE0111BD87EA20093125B /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		2BEFE0121BD87EA20093125B /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		2BEFE0141BD87EA30093125B /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		2BEFE0151BD87EA30093125B /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		2BEFE0171BD89D960093125B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2BEFE0181BD89D960093125B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		2BEFE01B1BD8C5E70093125B /* ViewCastMembersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCastMembersListViewController.h; sourceTree = "<group>"; };
+		2BEFE01C1BD8C5E70093125B /* ViewCastMembersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCastMembersListViewController.m; sourceTree = "<group>"; };
+		2BEFE01E1BD8C5FB0093125B /* ViewCastMembersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewCastMembersListViewController.xib; sourceTree = "<group>"; };
+		2BEFE0201BD8D65D0093125B /* CreateAlertsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlertsHelper.h; sourceTree = "<group>"; };
+		2BEFE0211BD8D65D0093125B /* CreateAlertsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlertsHelper.m; sourceTree = "<group>"; };
+		2BEFE0231BD8E02E0093125B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6B139FEEACD6A8CA5F7B8414 /* libPods-ABC Movie Theatre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABC Movie Theatre.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5A3C686F921098E6BA469F /* Pods-ABC Movie Theatre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC Movie Theatre.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABC Movie Theatre/Pods-ABC Movie Theatre.release.xcconfig"; sourceTree = "<group>"; };
+		DBC769A1415D9F1E4C2957AC /* Pods-ABC Movie Theatre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABC Movie Theatre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABC Movie Theatre/Pods-ABC Movie Theatre.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B532ED01BD564CB0001FBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEFE0241BD8E02E0093125B /* SystemConfiguration.framework in Frameworks */,
+				875CF2C24B1EE40F170B5440 /* libPods-ABC Movie Theatre.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B532EEC1BD564CC0001FBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B532ECA1BD564CB0001FBF1 = {
+			isa = PBXGroup;
+			children = (
+				2B532ED51BD564CB0001FBF1 /* ABC Movie Theatre */,
+				2B532EF21BD564CC0001FBF1 /* ABC Movie TheatreTests */,
+				2B532ED41BD564CB0001FBF1 /* Products */,
+				CDBD12D0ABA71E3FC0C5B3FC /* Pods */,
+				69331DCC84345AECFDEA31FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B532ED41BD564CB0001FBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B532ED31BD564CB0001FBF1 /* ABC Movie Theatre.app */,
+				2B532EEF1BD564CC0001FBF1 /* ABC Movie TheatreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B532ED51BD564CB0001FBF1 /* ABC Movie Theatre */ = {
+			isa = PBXGroup;
+			children = (
+				2B532F001BD565970001FBF1 /* Resources */,
+				2B532EFF1BD5656C0001FBF1 /* Classes */,
+				2B532ED61BD564CB0001FBF1 /* Supporting Files */,
+			);
+			path = "ABC Movie Theatre";
+			sourceTree = "<group>";
+		};
+		2B532ED61BD564CB0001FBF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B532ED71BD564CB0001FBF1 /* Info.plist */,
+				2B532ED81BD564CB0001FBF1 /* main.m */,
+				2BC865D91BD634B2006ABEF3 /* ABCMovieTheatre-Prefix.pch */,
+				2BEFDFB01BD742F70093125B /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B532EF21BD564CC0001FBF1 /* ABC Movie TheatreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B532EF51BD564CC0001FBF1 /* ABC_Movie_TheatreTests.m */,
+				2B532EF31BD564CC0001FBF1 /* Supporting Files */,
+			);
+			path = "ABC Movie TheatreTests";
+			sourceTree = "<group>";
+		};
+		2B532EF31BD564CC0001FBF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B532EF41BD564CC0001FBF1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B532EFF1BD5656C0001FBF1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFE01A1BD89DA10093125B /* Constants */,
+				2BEFE0091BD8191B0093125B /* Data Models */,
+				2BEFDFA51BD6A4080093125B /* UI */,
+				2BC865C11BD5FF4C006ABEF3 /* Data Retrieval Classes */,
+				2BC865D41BD63047006ABEF3 /* Core Data Classes */,
+				2B532F021BD565CD0001FBF1 /* App Delegate */,
+				2B532F011BD565B60001FBF1 /* View Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2B532F001BD565970001FBF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFCE1BD777520093125B /* Data Files */,
+				2BEFDFB61BD7471E0093125B /* NIB Files */,
+				2BEFDFB51BD747130093125B /* Images */,
+				2B532EE31BD564CB0001FBF1 /* Main.storyboard */,
+				2B532EE61BD564CC0001FBF1 /* Images.xcassets */,
+				2B532EDD1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2B532F011BD565B60001FBF1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFE0001BD7E2450093125B /* Protocols */,
+				2B532F0A1BD569BC0001FBF1 /* MovieListViewController.h */,
+				2B532F0B1BD569BC0001FBF1 /* MovieListViewController.m */,
+				2BE407BE1BD5F9C800AEABB5 /* BaseListViewController.h */,
+				2BE407BF1BD5F9C800AEABB5 /* BaseListViewController.m */,
+				2BEFDFBF1BD75DFE0093125B /* AddNewMovieViewController.h */,
+				2BEFDFC01BD75DFE0093125B /* AddNewMovieViewController.m */,
+				2BEFDFDB1BD7A8E10093125B /* PickerViewController.h */,
+				2BEFDFDC1BD7A8E10093125B /* PickerViewController.m */,
+				2BEFDFE01BD7C9EC0093125B /* GenreListViewController.h */,
+				2BEFDFE11BD7C9EC0093125B /* GenreListViewController.m */,
+				2BEFDFF61BD7DFAE0093125B /* CastMembersViewController.h */,
+				2BEFDFF71BD7DFAE0093125B /* CastMembersViewController.m */,
+				2BEFE01B1BD8C5E70093125B /* ViewCastMembersListViewController.h */,
+				2BEFE01C1BD8C5E70093125B /* ViewCastMembersListViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2B532F021BD565CD0001FBF1 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2B532EDA1BD564CB0001FBF1 /* AppDelegate.h */,
+				2B532EDB1BD564CB0001FBF1 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		2B532F031BD566D20001FBF1 /* Core Data Entities  */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFE0141BD87EA30093125B /* Movie.h */,
+				2BEFE0151BD87EA30093125B /* Movie.m */,
+				2BEFE0111BD87EA20093125B /* Genre.h */,
+				2BEFE0121BD87EA20093125B /* Genre.m */,
+			);
+			name = "Core Data Entities ";
+			sourceTree = "<group>";
+		};
+		2BC865C11BD5FF4C006ABEF3 /* Data Retrieval Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2BC865C81BD60596006ABEF3 /* WebServiceDataRetrievalManager.h */,
+				2BC865C91BD60596006ABEF3 /* WebServiceDataRetrievalManager.m */,
+				2BC865CB1BD60625006ABEF3 /* DataRetrievalBase.h */,
+				2BC865CC1BD60625006ABEF3 /* DataRetrievalBase.m */,
+				2BC865CE1BD606D6006ABEF3 /* MovieRetrieval.h */,
+				2BC865CF1BD606D6006ABEF3 /* MovieRetrieval.m */,
+				2BC865D11BD6073D006ABEF3 /* GenreRetrieval.h */,
+				2BC865D21BD6073D006ABEF3 /* GenreRetrieval.m */,
+			);
+			name = "Data Retrieval Classes";
+			sourceTree = "<group>";
+		};
+		2BC865D41BD63047006ABEF3 /* Core Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2BC865FB1BD672FA006ABEF3 /* Core Data Constants  */,
+				2BC865DA1BD63B24006ABEF3 /* Handlers */,
+				2B532F031BD566D20001FBF1 /* Core Data Entities  */,
+				2BC865D51BD63082006ABEF3 /* Core Data Manager */,
+			);
+			name = "Core Data Classes";
+			sourceTree = "<group>";
+		};
+		2BC865D51BD63082006ABEF3 /* Core Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2BC865D61BD630C0006ABEF3 /* CoreDataManager.h */,
+				2BC865D71BD630C0006ABEF3 /* CoreDataManager.m */,
+			);
+			name = "Core Data Manager";
+			sourceTree = "<group>";
+		};
+		2BC865DA1BD63B24006ABEF3 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				2BC865DC1BD63B77006ABEF3 /* DataHandlerBase.h */,
+				2BC865DD1BD63B77006ABEF3 /* DataHandlerBase.m */,
+				2BC865E01BD63B97006ABEF3 /* MovieDataHandler.h */,
+				2BC865E11BD63B97006ABEF3 /* MovieDataHandler.m */,
+				2BC865E31BD63BAA006ABEF3 /* GenreDataHandler.h */,
+				2BC865E41BD63BAA006ABEF3 /* GenreDataHandler.m */,
+				2BC865F21BD6483E006ABEF3 /* DataHandlerManager.h */,
+				2BC865F31BD6483E006ABEF3 /* DataHandlerManager.m */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
+		2BC865FB1BD672FA006ABEF3 /* Core Data Constants  */ = {
+			isa = PBXGroup;
+			children = (
+				2BC865FC1BD67327006ABEF3 /* CoreDataConstants.h */,
+				2BC865FD1BD67327006ABEF3 /* CoreDataConstants.m */,
+			);
+			name = "Core Data Constants ";
+			sourceTree = "<group>";
+		};
+		2BEFDFA51BD6A4080093125B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFA61BD6A4120093125B /* Custom Cells */,
+				2BEFE0201BD8D65D0093125B /* CreateAlertsHelper.h */,
+				2BEFE0211BD8D65D0093125B /* CreateAlertsHelper.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2BEFDFA61BD6A4120093125B /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFD61BD783AC0093125B /* New Movie Table Cell */,
+				2BEFDFA71BD6A4480093125B /* MoviesTableViewCell.h */,
+				2BEFDFA81BD6A4480093125B /* MoviesTableViewCell.m */,
+				2BEFDFF11BD7D6A30093125B /* GenreSelectCell.h */,
+				2BEFDFF21BD7D6A30093125B /* GenreSelectCell.m */,
+				2BEFE0031BD7FD700093125B /* TextFieldViewCell.h */,
+				2BEFE0041BD7FD700093125B /* TextFieldViewCell.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		2BEFDFB51BD747130093125B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFBA1BD756F80093125B /* score-mark.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2BEFDFB61BD7471E0093125B /* NIB Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFD31BD781CD0093125B /* TitleWithSwitchCell.xib */,
+				2BEFDFCB1BD773350093125B /* TitleWithLabelCell.xib */,
+				2BEFDFC61BD773100093125B /* TitleWithTextFieldCell.xib */,
+				2BEFDFB41BD7454E0093125B /* MoviesTableViewCell.xib */,
+				2BE407C01BD5F9C800AEABB5 /* BaseListViewController.xib */,
+				2B532EE81BD564CC0001FBF1 /* LaunchScreen.xib */,
+				2BEFDFC11BD75DFE0093125B /* AddNewMovieViewController.xib */,
+				2BEFDFDE1BD7A9020093125B /* PickerViewController.xib */,
+				2BEFDFE21BD7C9EC0093125B /* GenreListViewController.xib */,
+				2BEFDFF31BD7D6A30093125B /* GenreSelectCell.xib */,
+				2BEFDFF81BD7DFAE0093125B /* CastMembersViewController.xib */,
+				2BEFE0051BD7FD700093125B /* TextFieldViewCell.xib */,
+				2BEFE01E1BD8C5FB0093125B /* ViewCastMembersListViewController.xib */,
+			);
+			name = "NIB Files";
+			sourceTree = "<group>";
+		};
+		2BEFDFCE1BD777520093125B /* Data Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFCF1BD777850093125B /* NewMovieProperties.plist */,
+			);
+			name = "Data Files";
+			sourceTree = "<group>";
+		};
+		2BEFDFD61BD783AC0093125B /* New Movie Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFC41BD773100093125B /* TitleWithTextFieldCell.h */,
+				2BEFDFC51BD773100093125B /* TitleWithTextFieldCell.m */,
+				2BEFDFC91BD773340093125B /* TitleWithLabelCell.h */,
+				2BEFDFCA1BD773350093125B /* TitleWithLabelCell.m */,
+				2BEFDFD11BD781CD0093125B /* TitleWithSwitchCell.h */,
+				2BEFDFD21BD781CD0093125B /* TitleWithSwitchCell.m */,
+				2BEFDFD81BD784B90093125B /* NewMovieTableCellBase.h */,
+				2BEFDFD91BD784B90093125B /* NewMovieTableCellBase.m */,
+			);
+			name = "New Movie Table Cell";
+			sourceTree = "<group>";
+		};
+		2BEFE0001BD7E2450093125B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFDFE51BD7CB730093125B /* ViewControllerProtocol.h */,
+				2BEFDFE61BD7CD280093125B /* ListViewControllerProtocol.h */,
+				2BEFE0081BD8110E0093125B /* AddNewMovieViewControllerProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		2BEFE0091BD8191B0093125B /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFE00D1BD81BC60093125B /* MovieDataModel.h */,
+				2BEFE00E1BD81BC60093125B /* MovieDataModel.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		2BEFE01A1BD89DA10093125B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFE0171BD89D960093125B /* Constants.h */,
+				2BEFE0181BD89D960093125B /* Constants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		69331DCC84345AECFDEA31FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFE0231BD8E02E0093125B /* SystemConfiguration.framework */,
+				6B139FEEACD6A8CA5F7B8414 /* libPods-ABC Movie Theatre.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDBD12D0ABA71E3FC0C5B3FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBC769A1415D9F1E4C2957AC /* Pods-ABC Movie Theatre.debug.xcconfig */,
+				9C5A3C686F921098E6BA469F /* Pods-ABC Movie Theatre.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B532ED21BD564CB0001FBF1 /* ABC Movie Theatre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B532EF91BD564CC0001FBF1 /* Build configuration list for PBXNativeTarget "ABC Movie Theatre" */;
+			buildPhases = (
+				FD49D8992C64BD716ACC93FA /* Check Pods Manifest.lock */,
+				2B532ECF1BD564CB0001FBF1 /* Sources */,
+				2B532ED01BD564CB0001FBF1 /* Frameworks */,
+				2B532ED11BD564CB0001FBF1 /* Resources */,
+				8783BCBB8B81C340D7EC24CC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ABC Movie Theatre";
+			productName = "ABC Movie Theatre";
+			productReference = 2B532ED31BD564CB0001FBF1 /* ABC Movie Theatre.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B532EEE1BD564CC0001FBF1 /* ABC Movie TheatreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B532EFC1BD564CC0001FBF1 /* Build configuration list for PBXNativeTarget "ABC Movie TheatreTests" */;
+			buildPhases = (
+				2B532EEB1BD564CC0001FBF1 /* Sources */,
+				2B532EEC1BD564CC0001FBF1 /* Frameworks */,
+				2B532EED1BD564CC0001FBF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B532EF11BD564CC0001FBF1 /* PBXTargetDependency */,
+			);
+			name = "ABC Movie TheatreTests";
+			productName = "ABC Movie TheatreTests";
+			productReference = 2B532EEF1BD564CC0001FBF1 /* ABC Movie TheatreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B532ECB1BD564CB0001FBF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ABC;
+				TargetAttributes = {
+					2B532ED21BD564CB0001FBF1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2B532EEE1BD564CC0001FBF1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2B532ED21BD564CB0001FBF1;
+					};
+				};
+			};
+			buildConfigurationList = 2B532ECE1BD564CB0001FBF1 /* Build configuration list for PBXProject "ABC Movie Theatre" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B532ECA1BD564CB0001FBF1;
+			productRefGroup = 2B532ED41BD564CB0001FBF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B532ED21BD564CB0001FBF1 /* ABC Movie Theatre */,
+				2B532EEE1BD564CC0001FBF1 /* ABC Movie TheatreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B532ED11BD564CB0001FBF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEFDFC31BD75DFE0093125B /* AddNewMovieViewController.xib in Resources */,
+				2BEFDFDF1BD7A9020093125B /* PickerViewController.xib in Resources */,
+				2BEFDFD01BD777850093125B /* NewMovieProperties.plist in Resources */,
+				2BEFDFFA1BD7DFAE0093125B /* CastMembersViewController.xib in Resources */,
+				2BEFDFCD1BD773350093125B /* TitleWithLabelCell.xib in Resources */,
+				2BEFDFE41BD7C9EC0093125B /* GenreListViewController.xib in Resources */,
+				2BEFDFF51BD7D6A30093125B /* GenreSelectCell.xib in Resources */,
+				2B532EE51BD564CB0001FBF1 /* Main.storyboard in Resources */,
+				2BEFDFC81BD773100093125B /* TitleWithTextFieldCell.xib in Resources */,
+				2BEFDFAE1BD742F70093125B /* Localizable.strings in Resources */,
+				2BEFE01F1BD8C5FB0093125B /* ViewCastMembersListViewController.xib in Resources */,
+				2BEFDFB21BD7454E0093125B /* MoviesTableViewCell.xib in Resources */,
+				2BE407C21BD5F9C800AEABB5 /* BaseListViewController.xib in Resources */,
+				2BEFDFD51BD781CD0093125B /* TitleWithSwitchCell.xib in Resources */,
+				2B532EEA1BD564CC0001FBF1 /* LaunchScreen.xib in Resources */,
+				2BEFDFBC1BD756F80093125B /* score-mark.png in Resources */,
+				2BEFE0071BD7FD700093125B /* TextFieldViewCell.xib in Resources */,
+				2B532EE71BD564CC0001FBF1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B532EED1BD564CC0001FBF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8783BCBB8B81C340D7EC24CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABC Movie Theatre/Pods-ABC Movie Theatre-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD49D8992C64BD716ACC93FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B532ECF1BD564CB0001FBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC865DE1BD63B77006ABEF3 /* DataHandlerBase.m in Sources */,
+				2BC865D31BD6073D006ABEF3 /* GenreRetrieval.m in Sources */,
+				2BEFE0161BD87EA30093125B /* Movie.m in Sources */,
+				2BEFDFC71BD773100093125B /* TitleWithTextFieldCell.m in Sources */,
+				2BEFE00F1BD81BC60093125B /* MovieDataModel.m in Sources */,
+				2BEFE0191BD89D960093125B /* Constants.m in Sources */,
+				2BC865E21BD63B97006ABEF3 /* MovieDataHandler.m in Sources */,
+				2BEFDFCC1BD773350093125B /* TitleWithLabelCell.m in Sources */,
+				2BEFDFD41BD781CD0093125B /* TitleWithSwitchCell.m in Sources */,
+				2BEFDFE31BD7C9EC0093125B /* GenreListViewController.m in Sources */,
+				2BC865D01BD606D6006ABEF3 /* MovieRetrieval.m in Sources */,
+				2BEFE01D1BD8C5E70093125B /* ViewCastMembersListViewController.m in Sources */,
+				2BC865CA1BD60596006ABEF3 /* WebServiceDataRetrievalManager.m in Sources */,
+				2B532EDC1BD564CB0001FBF1 /* AppDelegate.m in Sources */,
+				2BEFE0221BD8D65D0093125B /* CreateAlertsHelper.m in Sources */,
+				2B532ED91BD564CB0001FBF1 /* main.m in Sources */,
+				2BC865D81BD630C0006ABEF3 /* CoreDataManager.m in Sources */,
+				2BEFE0061BD7FD700093125B /* TextFieldViewCell.m in Sources */,
+				2B532F0C1BD569BC0001FBF1 /* MovieListViewController.m in Sources */,
+				2BEFE0131BD87EA20093125B /* Genre.m in Sources */,
+				2BC865CD1BD60625006ABEF3 /* DataRetrievalBase.m in Sources */,
+				2BEFDFAA1BD6A4480093125B /* MoviesTableViewCell.m in Sources */,
+				2BC865F41BD6483E006ABEF3 /* DataHandlerManager.m in Sources */,
+				2BEFDFDA1BD784B90093125B /* NewMovieTableCellBase.m in Sources */,
+				2B532EDF1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodeld in Sources */,
+				2BC865E51BD63BAA006ABEF3 /* GenreDataHandler.m in Sources */,
+				2BEFDFF41BD7D6A30093125B /* GenreSelectCell.m in Sources */,
+				2BC865FE1BD67327006ABEF3 /* CoreDataConstants.m in Sources */,
+				2BEFDFF91BD7DFAE0093125B /* CastMembersViewController.m in Sources */,
+				2BEFDFC21BD75DFE0093125B /* AddNewMovieViewController.m in Sources */,
+				2BEFDFDD1BD7A8E10093125B /* PickerViewController.m in Sources */,
+				2BE407C11BD5F9C800AEABB5 /* BaseListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B532EEB1BD564CC0001FBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B532EF61BD564CC0001FBF1 /* ABC_Movie_TheatreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B532EF11BD564CC0001FBF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B532ED21BD564CB0001FBF1 /* ABC Movie Theatre */;
+			targetProxy = 2B532EF01BD564CC0001FBF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B532EE31BD564CB0001FBF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B532EE41BD564CB0001FBF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B532EE81BD564CC0001FBF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B532EE91BD564CC0001FBF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2BEFDFB01BD742F70093125B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BEFDFAF1BD742F70093125B /* en */,
+				2BEFDFB11BD742FC0093125B /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2BEFDFB41BD7454E0093125B /* MoviesTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BEFDFB31BD7454E0093125B /* en */,
+			);
+			name = MoviesTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B532EF71BD564CC0001FBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B532EF81BD564CC0001FBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B532EFA1BD564CC0001FBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC769A1415D9F1E4C2957AC /* Pods-ABC Movie Theatre.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ABC Movie Theatre/ABCMovieTheatre-Prefix.pch";
+				INFOPLIST_FILE = "ABC Movie Theatre/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B532EFB1BD564CC0001FBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5A3C686F921098E6BA469F /* Pods-ABC Movie Theatre.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ABC Movie Theatre/ABCMovieTheatre-Prefix.pch";
+				INFOPLIST_FILE = "ABC Movie Theatre/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B532EFD1BD564CC0001FBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ABC Movie TheatreTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABC Movie Theatre.app/ABC Movie Theatre";
+			};
+			name = Debug;
+		};
+		2B532EFE1BD564CC0001FBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ABC Movie TheatreTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABC Movie Theatre.app/ABC Movie Theatre";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B532ECE1BD564CB0001FBF1 /* Build configuration list for PBXProject "ABC Movie Theatre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B532EF71BD564CC0001FBF1 /* Debug */,
+				2B532EF81BD564CC0001FBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B532EF91BD564CC0001FBF1 /* Build configuration list for PBXNativeTarget "ABC Movie Theatre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B532EFA1BD564CC0001FBF1 /* Debug */,
+				2B532EFB1BD564CC0001FBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B532EFC1BD564CC0001FBF1 /* Build configuration list for PBXNativeTarget "ABC Movie TheatreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B532EFD1BD564CC0001FBF1 /* Debug */,
+				2B532EFE1BD564CC0001FBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2B532EDD1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2B532EDE1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodel */,
+			);
+			currentVersion = 2B532EDE1BD564CB0001FBF1 /* ABC_Movie_Theatre.xcdatamodel */;
+			path = ABC_Movie_Theatre.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2B532ECB1BD564CB0001FBF1 /* Project object */;
+}

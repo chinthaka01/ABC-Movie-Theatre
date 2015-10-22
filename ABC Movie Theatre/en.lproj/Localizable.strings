@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  ABC Movie Theatre
+
+  Created by Chinthaka Perera on 10/21/15.
+  Copyright (c) 2015 ABC. All rights reserved.
+*/
+
+A_FICTION_MOVIE = "A fiction Movie";
+CAST_MEMBERS = "Cast Members";
+ABC_MOVIES = "ABC Movies";
+ADD_NEW_MOVIE = "Add";
+NEW_MOVIE_TITLE = "New Movie";
+BACK = "Back";
+MOVIE_NAME_PLACEHOLDER = "Enter Name";
+MOVIE_NAME = "Name";
+YEAR = "Year";
+FICTION_MOVIE = "Is a Fiction Movie?";
+GENRE = "Genre";
+CAST = "Member of Cast";
+SCORE = "Score";
+SELECT_YEAR = "Select Year";
+SELECT_SCORE = "Select Score";
+DONE = "Done";
+CANCEL = "Cancel";
+SELECT_GENRE = "Select Genre";
+ENTER_CAST_MEMBER_NAME = "Enter Cast Member Name";
+
+NETWORK_NOT_AVAILABLE = "We can't connect to the internet. Please check your network settings.";
+MOVIE_ALREADY_EXIST = "The movie is already added. You can not add the same movie twice.";
+SOME_FIELDS_ARE_MISSING = "You have to add all the information of the movie. Please check again.";
+CANCEL_CONFIRMATION = "These values will be cleared after you cancel. Are you sure, you want to cancel ?";
+
+OK = "Ok";
+YES = "Yes";
+NO = "No";

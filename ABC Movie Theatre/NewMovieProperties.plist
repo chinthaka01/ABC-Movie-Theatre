@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>placeholder</key>
+		<string>MOVIE_NAME_PLACEHOLDER</string>
+		<key>type</key>
+		<string>textfield</string>
+		<key>title</key>
+		<string>MOVIE_NAME</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>picker</string>
+		<key>title</key>
+		<string>YEAR</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>set option</string>
+		<key>title</key>
+		<string>FICTION_MOVIE</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>set choice</string>
+		<key>title</key>
+		<string>GENRE</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>multiple inputs</string>
+		<key>title</key>
+		<string>CAST</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>picker</string>
+		<key>title</key>
+		<string>SCORE</string>
+	</dict>
+</array>
+</plist>

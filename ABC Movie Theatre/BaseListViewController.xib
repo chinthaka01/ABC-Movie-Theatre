@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseListViewController">
+            <connections>
+                <outlet property="tableView" destination="xPA-TO-aXs" id="0qF-lK-1oC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xPA-TO-aXs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mj4-az-yOk"/>
+                        <outlet property="delegate" destination="-1" id="qdc-gL-aIV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xPA-TO-aXs" secondAttribute="trailing" id="CI7-tF-ygR"/>
+                <constraint firstAttribute="centerX" secondItem="xPA-TO-aXs" secondAttribute="centerX" id="MDL-aT-hhO"/>
+                <constraint firstAttribute="bottom" secondItem="xPA-TO-aXs" secondAttribute="bottom" id="PsI-Zp-nj2"/>
+                <constraint firstItem="xPA-TO-aXs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d4L-W0-2Uw"/>
+                <constraint firstItem="xPA-TO-aXs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p8f-a4-S5U"/>
+                <constraint firstAttribute="centerY" secondItem="xPA-TO-aXs" secondAttribute="centerY" id="sq6-4e-yeJ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="xPA-TO-aXs"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="CI7-tF-ygR"/>
+                    <exclude reference="MDL-aT-hhO"/>
+                    <exclude reference="PsI-Zp-nj2"/>
+                    <exclude reference="d4L-W0-2Uw"/>
+                    <exclude reference="p8f-a4-S5U"/>
+                    <exclude reference="sq6-4e-yeJ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="xPA-TO-aXs"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="CI7-tF-ygR"/>
+                    <include reference="MDL-aT-hhO"/>
+                    <include reference="PsI-Zp-nj2"/>
+                    <include reference="d4L-W0-2Uw"/>
+                    <include reference="p8f-a4-S5U"/>
+                    <include reference="sq6-4e-yeJ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
