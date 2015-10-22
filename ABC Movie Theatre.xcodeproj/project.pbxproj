@@ -73,7 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B532ED31BD564CB0001FBF1 /* ABC Movie Theatre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABC Movie Theatre.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B532ED31BD564CB0001FBF1 /* ABC Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABC Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B532ED71BD564CB0001FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B532ED81BD564CB0001FBF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B532EDA1BD564CB0001FBF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		2B532ED41BD564CB0001FBF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B532ED31BD564CB0001FBF1 /* ABC Movie Theatre.app */,
+				2B532ED31BD564CB0001FBF1 /* ABC Movies.app */,
 				2B532EEF1BD564CC0001FBF1 /* ABC Movie TheatreTests.xctest */,
 			);
 			name = Products;
@@ -515,7 +515,7 @@
 			);
 			name = "ABC Movie Theatre";
 			productName = "ABC Movie Theatre";
-			productReference = 2B532ED31BD564CB0001FBF1 /* ABC Movie Theatre.app */;
+			productReference = 2B532ED31BD564CB0001FBF1 /* ABC Movies.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2B532EEE1BD564CC0001FBF1 /* ABC Movie TheatreTests */ = {
@@ -825,7 +825,7 @@
 				INFOPLIST_FILE = "ABC Movie Theatre/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ABC Movies";
 			};
 			name = Debug;
 		};
@@ -838,7 +838,7 @@
 				INFOPLIST_FILE = "ABC Movie Theatre/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ABC Movies";
 			};
 			name = Release;
 		};
